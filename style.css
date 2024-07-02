@@ -1,0 +1,372 @@
+
+/* Ensure full height and no margin for html and body */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #305f14;
+    
+}
+
+
+.header {
+    margin: 0;
+    width: 100%;
+    aspect-ratio: 1600 / 93;
+    display: block;
+}
+
+button:hover {
+    transform: scale(1.05); /* Slightly increase the size */
+    transition: transform 0.2s; /* Smooth transition */
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-11vh);
+}
+
+.button-text{
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.yellowButton{
+    margin: 30px;
+    margin-bottom: 5px;
+    background-color: #f0c300;
+    border: .5px solid #f0c300;
+    border-radius: 10px;
+    color: #15430f;
+    width: 15vw;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 15px 5px 15px;
+}
+
+#buton-cod{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: #f0c300;
+    border: .5px solid #f0c300;
+    border-radius: 10px;
+    color: #15430f;
+    width: 7vw;
+    font-size: 1rem;
+    font-weight: 800;
+    width: 40%;
+}
+
+.transparentButton{
+    margin: 30px;
+    margin-bottom: 0px;
+    background-color: transparent;
+    border: 4px solid white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    width: 15vw;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 15px 20px 15px;
+    box-shadow: 0 0 10px 0 rgb(255, 255, 255),
+                    0 0 5px 0 rgb(255, 255, 255),
+                    0 0 0px 0 rgb(255, 255, 255) inset;
+}
+
+.bigImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/images/backgorund.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 1600 / 962;
+  
+
+}
+
+.footer {
+    aspect-ratio: 1600 / 240;
+    width: 100%;
+    margin: 0;
+}
+
+.footer-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 40%;
+}
+
+.beer {
+    position: absolute;
+    bottom: 92%; /* Adjust this value to control the overlap amount */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    margin-bottom: 10vh;
+}
+
+.image-half {
+    flex: 1;
+    padding: 70px;
+    /* background-image: url('image2.png'); Replace with your image URL
+    background-size: cover;
+    background-position: center; */
+}
+
+.form-half{
+    flex: 1;
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    padding:20px;  
+}
+
+.form-container{
+    width: 90%;
+    max-width: 550px;
+    background-color: #184115;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}  
+
+.form-container form input,
+.form-container form button {
+    padding: 15px;
+    cursor: pointer;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+input::placeholder {
+    color: #112e0f; /* Style for the placeholder text */
+}
+
+input{
+    color: #112e0f; /* Style for the placeholder text */
+    font-family: inherit;
+    font-size: large;
+    font-weight: 600;
+}
+
+.below-container-buttons{
+    margin-bottom: 9vh;
+}
+
+.below-container-buttons button{
+    width: 18vw;
+    font-size: 1.3vw;
+    padding: 10px 20px;
+}
+
+#castigatori{
+    width: 50%;
+}
+
+@media(max-width:1800px){
+    .yellowButton{
+        margin: 10px;
+        width: 20vw;
+        font-size: 1rem;
+    }
+    
+    .transparentButton{
+        margin: 10px;
+        width: 20vw;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:1200px){
+    .container {
+        flex-direction: column; /* Stack the image-half and form-half vertically */
+        margin-bottom: 120vh;
+        align-items: center;
+    }
+}
+
+@media (max-width:900px) {
+    .bigImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-image: url(/images/backgroundsmall.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        aspect-ratio: 390 / 540;
+    
+    }
+
+    .yellowButton{
+        margin: 10px;
+        margin-bottom: 5px;
+        background-color: #f0c300;
+        border: .5px solid #f0c300;
+        
+        color: #15430f;
+        width: 30vw;
+        font-size: 1rem;
+        font-weight: 800;
+        padding: 15px 5px 15px;
+    }
+    
+    .transparentButton{
+        margin: 10px;
+        margin-bottom: 0px;
+        background-color: transparent;
+        border: 4px solid white;
+        background-color: rgba(0, 0, 0, 0.3);
+        
+        color: white;
+        width: 30vw;
+        font-size: 1rem;
+        font-weight: 800;
+        padding: 15px 20px 15px;
+        box-shadow: 0 0 10px 0 rgb(255, 255, 255),
+                        0 0 5px 0 rgb(255, 255, 255),
+                        0 0 0px 0 rgb(255, 255, 255) inset;
+    }
+
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(-10vw, -16vh)
+    }
+
+    .button-text{
+        margin: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    .below-container-buttons button{
+        width: 20vw;
+        padding: 10px 20px;
+    }
+    
+}
+
+@media (max-width:500px) {
+    #castigatori{
+        width: 100%;
+        margin-bottom: 50vh;
+    }
+
+   
+
+    .beer {
+    
+        position: absolute;
+        bottom: 92%; /* Adjust this value to control the overlap amount */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20%;
+    }
+
+    .bigImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: auto;
+        background-image: url(/images/backgroundsmall.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        aspect-ratio: 390/540;
+    
+    }
+
+    .yellowButton{
+        margin: 10px;
+        margin-bottom: 5px;
+        background-color: #f0c300;
+        border: .5px solid #f0c300;
+        
+        color: #15430f;
+        width: 30vw;
+        font-size: 0.8rem;
+        font-weight: 800;
+        padding: 2px 2px 2px;
+    }
+    
+    .transparentButton{
+        margin: 10px;
+        margin-bottom: 0px;
+        background-color: transparent;
+        border: 4px solid white;
+        background-color: rgba(0, 0, 0, 0.3);
+        
+        color: white;
+        width: 30vw;
+        font-size: 0.8rem;
+        font-weight: 800;
+        padding: 2px 2px 2px;
+        box-shadow: 0 0 10px 0 rgb(255, 255, 255),
+                        0 0 5px 0 rgb(255, 255, 255),
+                        0 0 0px 0 rgb(255, 255, 255) inset;
+    }
+
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(-8vw, -11vh)
+    }
+
+    .below-container-buttons{
+        flex-direction: column;
+        margin-bottom: 10VH;
+       
+    }
+    .below-container-buttons button{
+        width: 60vw;
+        padding: 10px 20px;
+        font-size: 4vw;
+        margin: 15px;
+    }
+
+    .button-text{
+        margin: 5px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    .container {
+        flex-direction: column; /* Stack the image-half and form-half vertically */
+        margin-bottom: 85vh;
+        align-items: center;
+    }
+       
+    .image-half, .form-half {
+        width: 100%; /* Make sure both halves take full width */
+        padding: 0px; /* Adjust padding as necessary */
+    }
+
+     
+}
