@@ -4,6 +4,8 @@
 <title>Căștigă premii Ciucaș, pentru relaxare în natură!</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="castigatori.css">
+<link rel="stylesheet" href="footer.css">
 <link rel="shortcut icon" href="https://www.bereciucas.ro/static/img/favicon.png" type="image/png">
 
 <head>
@@ -30,17 +32,90 @@
 <div class="container">
     <div class="image-half">
         <picture>
-            <source srcset="images/regulamentsmall.png" media="(max-width: 500px)">
-            <source srcset="images/regulament.png">
-            <img src="images/regulament.png" alt="regulament">
+            <source srcset="images/rulesSmall.png" media="(max-width: 500px)">
+            <source srcset="images/rules.png">
+            <img src="images/rules.png" alt="regulament">
         </picture>
+        <h3><span class="big">COD: </span> <br>Dacă găsești sub capac codul
+            format din 7 caractere alfanumerice, înscrie-l Aici și poți
+            câștiga o bicicletă ciucaș. <br>
+            acordăm 600 de biciclete ciucaș prin tragere la sorți, câte 50 de
+            biciclete pe săptămână, timp de 12 săptămâni, în perioada
+            <span class="highlight">06.05.2024 - 28.07.2024</span></h3>
+        <h3><span class="big">STICLA: </span> <br>
+            DACĂ GĂSEȘTI SUB CAPAC CUVÂNTUL ”sticla”, îți ridici premiul, în
+            bere, în perioada
+            <span class="highlight">06.05.2024 - 18.08.2024</span>, din
+            centrele de premiere publicate <a href="#centre">AICI</a>.
+            premiile în bere se acordă în limita stocului disponibil
+            </h3>
+            <h4><span class="big">06 mai – 28 iulie 2024</span> (perioada în care
+                se pot înscrie pe site și pot fi câștigate premiile prin tragere
+                la sorți săptămânale)
+              </h4>
+              <h4><span class="big">06 mai - 18 august 2024</span> (perioada în care
+                pot fi revendicate premiile sub capac)
+              </h4>
+              <h4>
+                Campanie Națională : 06 mai - 18 august 2024 <br>
+                Perioada de înscriere pentru premiul bicicleta Ciucaș: 06 mai - 28
+                iulie 2024
+              </h4>
     </div>
     <div class="form-half">
         <div class="form-container">
             <p style="color: white; font-size: 34px; text-align: center;">Completeaza formularul si poti castiga una dintre cele 600 de bilete</p>
+            <h3 style="color: white; font-size: 20px; text-align: center;" >Completeaza data nasterii</h3>
             <form>
+                <div class="dobContainer">
+                    <select>
+                        <option value="" disabled selected>Zi</option>
+                        
+                        <script>
+                            for (let i = 1; i <= 31; i++) {
+                                document.write('<option value="' + i + '">' + i + '</option>');
+                            }
+                        </script>
+                    </select>
+                    <select><option value="" disabled="disabled" selected="selected">Luna</option> 
+                        <option value="01">
+                        Ianuarie
+                    </option><option value="02">
+                        Februarie
+                    </option><option value="03">
+                        Martie
+                    </option><option value="04">
+                        Aprilie
+                    </option><option value="05">
+                        Mai
+                    </option><option value="06">
+                        Iunie
+                    </option><option value="07">
+                        Iulie
+                    </option><option value="08">
+                        August
+                    </option><option value="09">
+                        Septembrie
+                    </option><option value="10">
+                        Octombrie
+                    </option><option value="11">
+                        Noiembrie
+                    </option><option value="12">
+                        Decembrie
+                    </option></select>
+                    <select id="lastDOB">
+                        <option value="" disabled selected>An</option>
+                        
+                        <script>
+                            const currentYear = new Date().getFullYear();
+                            for (let i = currentYear; i >= 1900; i--) {
+                                document.write('<option value="' + i + '">' + i + '</option>');
+                            }
+                        </script>
+                    </select>
+                </div>
                 <input type="text" placeholder="Nume si prenume">
-                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Data nasterii">
+                <!-- <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Data nasterii"> -->
                 <input type="number" placeholder="Cod promotional">
                 <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Numar de telefon">
                 <label style="color: white;">
@@ -62,17 +137,82 @@
 
 
   
-<img id="castigatori" style="display: block; margin-left: auto; margin-right: auto; " src="images/castigatori.png" alt="Navbar header">
+<div class="castigatori">
+    <div class="tabel">
+     <h2>VEZI DE UNDE ÎȚI POȚI RIDICA STICLA</h2>
+     <div class="form-castigatori">
+        <form>
+            <input type="text" placeholder="Nume si Prenume">
+        </form>
+        <button>Cauta</button>  
+     </div>
+        <table>
+            
+            <tr>
+                <td>Localitate</td>
+                <td>01. Nume & Prenume castigator</td>
+                <td>Bicicletă</td>
+            </tr>
+            <tr>
+                <td>Localitate</td>
+                <td>02. Nume & Prenume castigator</td>
+                <td>Bicicletă</td>
+            </tr>
+            <tr>
+                <td>Localitate</td>
+                <td>03. Nume & Prenume castigator</td>
+                <td>Bicicletă</td>
+            </tr>
+            <tr>
+                <td>Localitate</td>
+                <td>04. Nume & Prenume castigator</td>
+                <td>Bicicletă</td>
+            </tr>
+            <tr>
+                <td>Localitate</td>
+                <td>05. Nume & Prenume castigator</td>
+                <td>Bicicletă</td>
+            </tr>
+        </table>    
+        <div class="arrows">
+           
+            <button><img src="images/pagination-prev.png" alt=""></button>
+            <button><img src="images/pagination-next.png" alt=""></button>
+        </div>
+    </div>
+    <img id="headline" src="images/produse-headline.png" alt="">
 
-<div class="footer-container">
-    <picture>
-        <source srcset="images/footersmall.png" media="(max-width: 500px)">
-        <source srcset="images/footer.png">
-        <img class="footer" src="images/footer.png" alt="footer">
-    </picture>
-    
-    <img class="beer" src="images/beer.png" alt="beer">
 </div>
+
+    <img id="beer" src="images/beer.png" alt="">
+    <div class="footer-box">
+        <div class="footer-text">
+            <div class="links-top">
+                <a style="margin-left: 0px;">Termeni si conditii</a>
+                <a>Prelucrarea Datelor cu Caracter Personal</a>
+                <a href=""> Politica de conţinut în Social Media</a>
+                <a href=""> ANPC</a>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                <p>Vă rugăm, nu distribuiți conținutul acestei pagini persoanelor care nu au împlinit vârsta de 18 ani.</p>
+                <div class="footer-images">
+                <img id="warning" src="https://www.bereciucas.ro/static/img/logo_18.png">
+                <img id="facebook" src="https://www.bereciucas.ro/static/img/fb.png">
+                <img id="youtube" src="https://www.bereciucas.ro/static/img/yt.png">
+                </div>
+                 </div>
+                 <div class="footer-bottom-right">
+                    <p>copyright © 2024 Ursus Breweries, <br>
+                        Șoseaua Pipera nr. 43, Sector 2, București, <br>
+                        Cod poștal: 020112, cod unic de înmatriculare: <br>
+                         RO199095, tel: 0372.858.300. <br>
+                        Toate drepturile rezervate.</p>
+                 </div>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 </html>

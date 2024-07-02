@@ -1,0 +1,86 @@
+.footer-box{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: url(images/footer_bg.png); 
+    background-position: center;
+    
+    padding: 30px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 24vh;
+    width: 100%;
+    position: relative;
+    color: white;
+    z-index: 2;
+}
+
+.footer-text{
+    background-color: rgba(54, 54, 54, 0.84);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.links-top {
+    display: flex;
+    
+   
+    /* Optional: Add space between the items */
+    color: white;
+}
+
+.links-top a {
+    margin: auto 20px;
+    color: white;
+}
+
+.footer-bottom{
+    display: flex;
+    position: relative;
+}
+
+.footer-bottom-left{
+    
+    width: 40%;
+}
+
+.footer-bottom-right{
+    width: 60%;
+    margin-left: 20px;
+    display: flex;
+    
+    justify-content: center;
+
+}
+
+
+
+#beer{
+    display: block;
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(3vh);
+    z-index: 1;
+    width: 8%;
+}
+
+.footer-images{
+    position: absolute;
+    margin-bottom: 0;
+    bottom: 0%;
+}
+
+#facebook{
+    margin-bottom: 0px;
+}
+
+#warning{
+   margin-right: 2vw; 
+}
+
+#youtube{
+   margin: auto 1.3vw; 
+}

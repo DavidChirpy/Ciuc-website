@@ -1,0 +1,116 @@
+.castigatori{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+ }
+ 
+ .form-castigatori{
+     display: flex;
+     
+ }
+ 
+ .form-castigatori button{
+     margin: 30px;
+     margin-bottom: 5px;
+     background-color: #2e5a15;
+     border: .5px solid #2e5a15;
+     border-radius: 10px;
+     color: white;
+     width: 10vw;
+     font-size: 1.5rem;
+     font-weight: 800;
+     padding: 5px;
+ }
+ 
+ .form-castigatori input{
+     margin: 30px;
+     width: 25vw;
+     border-radius: 10px;
+ }
+ 
+ .form-castigatori input,button{
+     height: 8vh;
+ }
+ 
+ .tabel table{
+     width: 80%;
+     border-collapse: collapse;
+     text-align: left;
+ 
+ }
+ 
+ th, td {
+     padding: 20px;
+     border: 2px solid green; /* Lines only on the inside */
+     color: green; /* Green text */
+     font-size: clamp(20px, 1.75vw, 40px);
+     
+ }
+ 
+ tr:not(:first-child) {
+     border-top: 1px solid green; /* Border between rows */
+ }
+ 
+ .tabel{
+    position: relative;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     color: white;
+     width: 80%;
+     background-image: url(images/centre-bg.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-radius: 100px;
+     aspect-ratio: 919 / 640;
+     box-shadow: 0 0 1000px 0 rgb(0, 0, 0),
+                     0 0 20px 0 rgb(0, 0, 0),
+                     0 0 0px 0 rgb(0, 0, 0) ;
+ }
+ 
+ .tabel h2{
+     font-size: clamp(20px, 1.75vw, 40px);
+     margin-top: 0;
+     text-align: center;
+     margin-top: 1vh;
+     width: 70%;
+     background-color: #315F15;
+     padding: 2vh 3vw;
+     box-shadow: 0px 4px 13px 0px #000 inset, 0px 4px 26px 0px rgba(0, 0, 0, 0.65), 0px 4px 13px 0px rgba(0, 0, 0, 0.59) inset;
+     border-radius: 30px;
+ }
+ 
+ 
+ #headline{
+     position: relative;
+     bottom: 92%; /* Adjust this value to control the overlap amount */
+     
+     width: 40%;
+ }
+
+ .arrows{
+    position: absolute;
+    bottom: 5vh;
+    display: flex;
+    gap: 20px;
+ }
+
+ .arrows img{
+    height: 8vh;
+ }
+
+ .arrows button{
+    background: none;
+    border: none;
+ }
+
+ .contact-address {
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (max-width:500px) {
+
+    
+}
