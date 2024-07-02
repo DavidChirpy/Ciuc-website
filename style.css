@@ -83,7 +83,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(/images/backgorund.png);
+    background-image: url(images/backgorund.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -211,7 +211,7 @@ input{
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background-image: url(/images/backgroundsmall.png);
+        background-image: url(images/backgroundsmall.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -293,7 +293,7 @@ input{
         align-items: center;
         width: 100%;
         min-height: auto;
-        background-image: url(/images/backgroundsmall.png);
+        background-image: url(images/backgroundsmall.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
