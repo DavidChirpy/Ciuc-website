@@ -42,13 +42,12 @@
 }
 
 .footer-bottom-left{
-    
-    width: 40%;
+    width: 50%;
 }
 
 .footer-bottom-right{
-    width: 60%;
-    margin-left: 20px;
+    width: 50%;
+    
     display: flex;
     
     justify-content: center;
@@ -70,11 +69,14 @@
 .footer-images{
     position: absolute;
     margin-bottom: 0;
+    
     bottom: 0%;
 }
 
 #facebook{
     margin-bottom: 0px;
+    height: auto;
+    
 }
 
 #warning{
@@ -83,4 +85,43 @@
 
 #youtube{
    margin: auto 1.3vw; 
+   
+}
+
+@media(max-width:500px){
+    #beer{
+        width: 20%;
+    }
+
+    .footer-box{
+        padding: 2px;
+        height: 20vh;
+        width: 100%;  
+        font-size: 0.5rem;  
+    }
+
+    #youtube{
+        margin: auto 1.3vw; 
+        width: 4vw;
+    }
+
+     #warning{
+        margin-right: 2vw; 
+        width: 30vw;
+    }
+
+    #facebook{
+        margin-bottom: 0px;
+        height: auto;
+        width: 4vw;
+    }
+
+    .footer-text{
+        
+        padding: 10px;
+        margin: 5px;
+        
+    }
+
+   
 }

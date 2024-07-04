@@ -325,28 +325,28 @@ input{
     }
 
     .yellowButton{
-        margin: 10px;
+        margin: 5px;
         margin-bottom: 5px;
         background-color: #f0c300;
         border: .5px solid #f0c300;
         
         color: #15430f;
-        width: 30vw;
-        font-size: 0.8rem;
+        width: 20vw;
+        font-size: 0.6rem;
         font-weight: 800;
-        padding: 2px 2px 2px;
+        padding: 0px 0.5px;
     }
     
     .transparentButton{
-        margin: 10px;
+        margin: 5px;
         margin-bottom: 0px;
         background-color: transparent;
         border: 4px solid white;
         background-color: rgba(0, 0, 0, 0.3);
         
         color: white;
-        width: 30vw;
-        font-size: 0.8rem;
+        width: 20vw;
+        font-size: 0.6rem;
         font-weight: 800;
         padding: 2px 2px 2px;
         box-shadow: 0 0 10px 0 rgb(255, 255, 255),
@@ -358,7 +358,7 @@ input{
         display: flex;
         flex-direction: column;
         align-items: center;
-        transform: translate(-8vw, -11vh)
+        transform: translate(-8vw, -9vh)
     }
 
     .below-container-buttons{
@@ -375,7 +375,7 @@ input{
 
     .button-text{
         margin: 5px;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         font-weight: bold;
         color: white;
     }
@@ -389,6 +389,19 @@ input{
     .image-half, .form-half {
         width: 100%; /* Make sure both halves take full width */
         padding: 0px; /* Adjust padding as necessary */
+    }
+
+    #buton-cod{
+        margin-top: 1px;
+        margin-bottom: 1px;
+        background-color: #f0c300;
+        border: .5px solid #f0c300;
+        border-radius: 10px;
+        color: #15430f;
+        width: 7vw;
+        font-size: 1rem;
+        font-weight: 800;
+        width: 60%;
     }
 
      
