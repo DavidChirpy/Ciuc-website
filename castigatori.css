@@ -110,6 +110,37 @@
     margin: 0;
 }
 
+@media( max-width:1200px){
+    .tabel{
+        height: 120vh;
+    }
+}
+
+@media( max-width:890px){
+    .form-castigatori button{
+       
+        
+        
+        width: 25vw;
+        font-size: 0.8rem;
+        
+    }
+    
+    .form-castigatori input{ 
+        width: 30vw;
+        font-size: 0.8rem;
+    }
+
+    
+}
+
+@media( max-width:650px){
+    .tabel{
+        height: 150vh;
+    }
+    
+}
+
 @media (max-width:500px) {
     
 

@@ -11,7 +11,7 @@
     -o-background-size: contain;
     background-size: contain;
     height: 24vh;
-    width: 100%;
+    
     position: relative;
     color: white;
     z-index: 2;
@@ -88,6 +88,55 @@
    
 }
 
+.links-top a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+}
+
+.links-top a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+@media(max-width:700px){
+    #beer{
+        width: 20%;
+    }
+
+    .footer-box{
+        padding: 2px;
+        height: 20vh;
+        width: 100%;  
+        font-size: 0.8rem;  
+    }
+
+    #youtube{
+        margin: auto 1.3vw; 
+        width: 4vw;
+    }
+
+     #warning{
+        margin-right: 2vw; 
+        width: 30vw;
+    }
+
+    #facebook{
+        margin-bottom: 0px;
+        height: auto;
+        width: 4vw;
+    }
+
+    .footer-text{
+        
+        padding: 10px;
+        margin: 5px;
+        
+    }
+
+   
+}
+
+
+
 @media(max-width:500px){
     #beer{
         width: 20%;
@@ -125,3 +174,5 @@
 
    
 }
+
+
