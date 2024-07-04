@@ -97,6 +97,29 @@
     text-decoration: underline; /* Add underline on hover */
 }
 
+@media(max-width:800px){
+    #youtube{
+        margin: auto 1.3vw; 
+        width: 3.5vw;
+    }
+
+    .footer-box{
+         
+        font-size: 90%;  
+    }
+
+     #warning{
+        margin-right: 2vw; 
+        width: 30vw;
+    }
+
+    #facebook{
+        margin-bottom: 0px;
+        height: auto;
+        width: 3.5vw;
+    }
+}
+
 @media(max-width:700px){
     #beer{
         width: 20%;
